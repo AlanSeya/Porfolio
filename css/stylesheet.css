@@ -9,7 +9,6 @@
 body{
     font-family: 'Oswald';
 }
-
 .wrapper{
     width: 100vw;
     height: 100vh;
@@ -21,23 +20,28 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    
 }
 .brand span {
     color: aqua;
 }
 .menu {
     display: flex;
-    width: 50%;
+    width: 80%;
     justify-content: space-around;
+    font-size: 2vw;
 
 }
 .menu li {
     list-style: none;
+    font-size: 2vw;
 }
 .menu a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    font-size: 2vw;
+    white-space: nowrap;
 }
 .menu .active{
     color: aqua;
@@ -45,7 +49,8 @@ body{
 .menu a:hover {
     background-color: aqua;
     color: #191c32;
-    transition: ease-in .2s;
+    transition: ease-in .001s;
+    border-radius: 20px;
  }
  .main { 
     margin: 0 auto;
@@ -55,12 +60,71 @@ body{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
  }
- h1 { 
+ h1{
+    font-size: 4vw;
+ }
+ h1 span{ 
     color: aqua
  }
- span{
-    color: aqua;
+ p{
+    margin-right: 30px;
+    font-size: 2vw;
  }
- img {
+ .download-cv{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(255, 255, 255, 0.69);
+    font-size: 2vw;
+}
+ .download-cv:hover{
+    background-color: #fff;
+    box-shadow: none;
+ }
+
+ .main img {
     width: 30vw;
+    border: 1vh solid aqua;
+    
  }
+ .info-content{
+    width: 50vw;
+ }
+ h2{
+    font-size: 8vw;
+ }
+ .about {
+    width: 80%; /* Ancho del contenedor principal, ajusta según tus necesidades */
+    margin: 0 auto; /* Centrar el contenedor */
+    overflow: hidden; /* Limpiamos el float para que el contenedor envuelva a los elementos */
+  }
+  
+  .foto {
+    width: 40%; /* Ancho de la imagen, ajusta según tus necesidades */
+    float: right; /* Hacemos que la imagen flote a la derecha */
+    margin: 0 0 20px 20px; /* Margen para separar la imagen del texto */
+  }
+  
+  .about-info {
+    width: 55%; /* Ancho del contenido de texto, ajusta según tus necesidades */
+  }
+  
+  /* Estilos adicionales para mejorar la presentación */
+  .about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    line-height: 1.6;
+  }
