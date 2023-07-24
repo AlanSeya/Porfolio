@@ -1,0 +1,46 @@
+@import url('https://fonts.google.com/specimen/Oswald');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald';
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #ffff
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-betweens;
+    padding: 2em;
+}
+.brand span {
+    color: aqua;
+}
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+}
+.menu li {
+    list-style: none;
+}
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu .active{
+    color: aqua;
+}
+.menu a:hover {
+    background-color: aqua;
+}
