@@ -1,6 +1,6 @@
 @import url('https://fonts.google.com/specimen/Oswald');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,7 +19,7 @@ body{
 }
 .navbar {
     display: flex;
-    justify-content: space-betweens;
+    justify-content: space-between;
     padding: 2em;
 }
 .brand span {
